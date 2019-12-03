@@ -1,0 +1,88 @@
+body{
+    font-size: 1.2em;
+    width: 100%;
+    margin: 0 auto;
+    letter-spacing: 0.5px;
+
+}
+
+h1{
+    text-align: center;
+    font-family: 'Alex Brush', cursive;
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+#container{
+    padding: 1.5em;
+    background: linear-gradient(-45deg, rgba(205, 179, 224, 0.6), rgba(168, 134, 194, 0.9));
+    border-radius: 10px;
+}
+
+div{
+    line-height: 2.5em;
+}
+
+input[type="text"]{
+    font-size: 1.1em;
+    text-align: center;
+    border: none;
+}
+#billTotal:focus{
+    outline: none;
+}
+label, input{
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+.slider {
+    -webkit-appearance: none; 
+    appearance: none;
+    outline: none; 
+    opacity: 0.7; 
+    -webkit-transition: .2s; 
+    transition: opacity .2s;
+}
+.slider:hover {
+    opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px; 
+    height: 25px; 
+    cursor: pointer; 
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px; 
+    height: 20px; 
+    background: rgb(145, 123, 172);
+    cursor: pointer; 
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; 
+    height: 25px; 
+    background:rgb(145, 123, 172); 
+    cursor: pointer; 
+  }
+@media(min-width: 700px){
+    body{
+        width: 60%;
+        background: url(pic/two-types-of-wine-2466267_1920.jpg) no-repeat;
+        background-size: cover;
+        margin-top: 30px;
+    }
+
+    label, input{
+        display: inline-block;
+        width: 40%;
+    }
+
+    div{
+        line-height: 4em;
+    }
+
+}
