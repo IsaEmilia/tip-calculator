@@ -13,16 +13,16 @@ const container = document.getElementById('container')
 //functions
 function tip() {
     tipOutput.innerHTML = tipPercent.value + "%";
-    tipValue.innerHTML = totalBill.value * (tipPercent.value / 100);
+    tipValue.innerHTML = (totalBill.value * (tipPercent.value / 100)).toFixed(2);
     console.log(tipPercent.value);
 }
 
 function splitInput() {
     people.innerHTML = split.value;
-    newBill.innerHTML = totalBill.value / split.value;
+    newBill.innerHTML = (totalBill.value / split.value).toFixed(2);
     console.log(split.value);
 }
 
 //event listeners
-tipPercent.addEventListener("mouseup", tip);
-split.addEventListener("mouseup", splitInput);
+tipPercent.addEventListener("input", tip);
+split.addEventListener("input", splitInput);
