@@ -23,19 +23,21 @@
         <div>
             <label>Tip:</label>
             <input type="range" value="0" class="slider" id="tipInput">
+            <span id="tipOutput"></span>
         </div>
         <div>
             <label>Split (number of people)</label>
             <input type="range" min="1" max="10" value="1" class="slider" id="splitInput">
+            <span id="splitOutput"></span>
         </div>
         <hr>
 
         <div>
             <div>
-                <label>New Bill (per person):</label><span>0</span>
+                <label>New Bill (per person):</label><span id="newBill">0</span>
             </div>
             <div>
-                <label>Tip Amount (per person):</label><span>0</span>
+                <label>Tip Amount (per person):</label><span id="tipValue">0</span>
             </div>
         </div>
 
